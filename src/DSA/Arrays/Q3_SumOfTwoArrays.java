@@ -24,39 +24,37 @@ public class Q3_SumOfTwoArrays {
         return arr;
     }
 
-    public static int arraySum(int[] arr1, int[] arr2) {
+    public static int[] arraySum(int[] arr1, int[] arr2) {
         int len1 = arr1.length - 1;
         int len2 = arr2.length - 1;
 
         // find which array is larger
-        int max = Math.max(len1, len2);
-        int[] sumArr = new int[max + 1];
+        int max = Math.max(len1, len2) + 2;
+        // create array that store sum of number
+        int[] sum = new int[max];
+
+        // reducing length because index start from 0 and we are going to use max integer to access sumarray index
+        max--;
+
+        int carry = 0;
         while (max >= 0) {
+            int digitSum = carry;
             if (len1 >= 0) {
-                sumArr[max] = sumArr[max] + arr1[len1];
-                len1--;
+                digitSum += arr1[len1];
             }
             if (len2 >= 0) {
-                sumArr[max] = sumArr[max] + arr2[len2];
-                len2--;
+                digitSum += arr2[len2];
             }
+            int digit = digitSum;
+            if (digitSum >= 10) {
+                digit = digitSum % 10;
+                carry = digitSum / 10;
+            }
+            sum[max] = digit;
+
+            len1--;
+            len2--;
             max--;
-        }
-        System.out.println(Arrays.toString(sumArr));
-
-        // insert value of sum array in sum
-        int sum = 0;
-        int carry = 0;
-        for (int i = sumArr.length - 1; i >= 0; i--) {
-            sumArr[i] = sumArr[i] + carry;
-            carry = 0;
-            if (sumArr[i] < 10) {
-
-                sum = sum * 10 + sumArr[i];
-            } else {
-                sum = sum * 10 + sumArr[i] % 10;
-                carry = sumArr[i] / 10;
-            }
         }
         return sum;
     }
@@ -66,7 +64,9 @@ public class Q3_SumOfTwoArrays {
 //        int[] arr2 = createArr();
 
 //        int arraySum = arraySum(arr1, arr2);
-        int arraySum = arraySum(new int[]{1, 2, 3, 4}, new int[]{9, 9, 9, 9});
-        System.out.println(arraySum);
+//        int arraySum = arraySum(new int[]{1, 2, 3, 4}, new int[]{9, 9, 9, 9});
+        int[] arraySum = arraySum(new int[]{9, 9, 9, 9}, new int[]{9, 9, 9, 9, 9});
+        System.out.println(Arrays.toString(arraySum));
+
     }
 }
