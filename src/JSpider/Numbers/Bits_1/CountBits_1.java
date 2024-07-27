@@ -1,4 +1,4 @@
-package JSpider.Numbers.Bits;
+package JSpider.Numbers.Bits_1;
 
 import java.util.Scanner;
 

@@ -1,6 +1,6 @@
-package JSpider.Numbers.Bits;
+package JSpider.Numbers.Shift_2;
 
-public class Shift_3 {
+public class Shift {
     public static String shift01(int n) {
         String result = "";
         while (n > 0) {
