@@ -1,6 +1,6 @@
-package JSpider.Pattern;
+package JSpider.Pattern.Day_1;
 
-public class Q1_Square_1 {
+public class Q1_Square {
     public static void main(String[] args) {
         int n = 5;
         for (int i = 0; i < n; i++) {
