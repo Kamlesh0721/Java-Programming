@@ -1,4 +1,4 @@
-package JSpider.Numbers;
+package JSpider.Numbers.Palindrome_5;
 
 public class PalindromeAndPrime {
     static boolean isPrime(int n){
