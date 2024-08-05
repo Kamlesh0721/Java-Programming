@@ -1,4 +1,4 @@
-package JSpider.Numbers;
+package JSpider.Numbers.Practice_0;
 
 import java.util.Scanner;
 

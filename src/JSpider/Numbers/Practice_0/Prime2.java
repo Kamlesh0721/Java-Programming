@@ -1,4 +1,4 @@
-package JSpider.Numbers;
+package JSpider.Numbers.Practice_0;
  // WAJP to count all the prime number in range where sum of all the digit is also prime number
 public class Prime2 {
     static int getDigitSum(int n){
