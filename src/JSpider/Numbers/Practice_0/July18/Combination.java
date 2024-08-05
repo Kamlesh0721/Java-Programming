@@ -1,4 +1,4 @@
-package JSpider.Numbers.July18;
+package JSpider.Numbers.Practice_0.July18;
 /*
         ncr   =      n!
                 (n-r)! x r!

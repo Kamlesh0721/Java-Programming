@@ -1,4 +1,4 @@
-package JSpider.Numbers.July18;
+package JSpider.Numbers.Practice_0.July18;
 /*
     nPr  =    n!
             (n-r)!
@@ -16,6 +16,6 @@ public class Permutation {
         return perm;
     }
     public static void main(String[] args) {
-        System.out.println(getPermutation(8,3));
+        System.out.println(getPermutation(10,10));
     }
 }

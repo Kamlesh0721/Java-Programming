@@ -1,4 +1,4 @@
-package JSpider.Numbers.July18;
+package JSpider.Numbers.Practice_0.July18;
 
 public class PascalsTriangle {
 
