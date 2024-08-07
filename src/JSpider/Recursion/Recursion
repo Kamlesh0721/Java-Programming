@@ -1,0 +1,17 @@
+Recursion:
+When a method calls itself then it is called recursion.
+It can be achieved in 3 ways :
+    1- By calling same method from inside method body.
+    2- By calling same method from method argument at the time of method call.
+    3- By calling same method from return statement.
+
+1- By calling same method from inside method body.
+    *  A method can call itself from inside method body which makes method to execute repeatedly.
+    * If it is not controlled then It will cause an error called stack overflow error.
+    * We can avoid stack overflow error by controlling recursion using flow control statement.
+
+2 - By calling same method from method argument at the time of method call.
+    A method can be called from argument to achieve controlled recursion.4
+
+3- A method can call itself to achieve recursion from the return statement.
+    * If it is not controlled then it will cause stack overflow error. We can control this recursion by using flow control statement.
