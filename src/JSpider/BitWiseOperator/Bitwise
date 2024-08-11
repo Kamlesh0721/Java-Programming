@@ -1,0 +1,36 @@
+Day - 1
+Bitwise operator is used to operate on binary bits of a number.
+There are :
+    1 - Bitwise OR ( | )
+    2 - Bitwise AND ( & )
+    3 - Bitwise XOR ( ^ )
+    4 - Bitwise Complement/Bitwise NOT( ~ )
+    5 - Bitwise Right Shift ( >> )
+    6 - Bitwise Left Shift ( << )
+    7 - Bitwise Unsigned Right Shift ( >>> )
+
+Binary Representation : ( of Positive Number)
+
+
+Bitwise OR ( | ):
+Bitwise OR takes two binary bits and if at least one binary bit is 1 then it becomes 1 otherwise it will be 0.
+
+Bitwise AND ( & ):
+Bitwise AND takes two binary bits and if both binary bits are 1 then it will be 1 otherwise it will be 0.
+
+Bitwise XOR ( ^ ):
+Bitwise XOR takes two binary bits if both are same then it will be 0 otherwise it will be 1.
+
+
+Day -2
+......
+.....
+
+
+
+Day - 3
+
+Bitwise Right Shift Operator ( >> )
+Bitwise Right Shift Operator is used to shift binary bits of a number into right side by the given value
+ex - 40 >> 3
+the binary bits of 40 will shift 3 position to right
