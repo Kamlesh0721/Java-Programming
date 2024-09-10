@@ -22,7 +22,7 @@ public class RotateRight {
 
     // Brute force approach : Time Complexity : O(n^2) | Space Complexity : O(1)
     public static void rotateByKposition_approach1(int[] arr, int k) {
-        if(arr.length<=0){
+        if (arr.length <= 0) {
             System.out.println("Empty Array ...");
             return;
         }
@@ -38,7 +38,7 @@ public class RotateRight {
     // Brute force approach : Time Complexity : O(n) | Space Complexity : O(m)
     public static void rotateByKposition_approach2(int[] arr, int k) {
 
-        if(arr.length<=0){
+        if (arr.length <= 0) {
             System.out.println("Empty ...");
             return;
         }
@@ -60,21 +60,48 @@ public class RotateRight {
 
     }
 
+    // Most IMP : Time Complexity : O(n) , Space Complexity : O(1)
+    public static void rotateArr(int[] arr, int start, int end) {
+        while (start < end) {
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+            start++;
+            end--;
+        }
+    }
+
+    public static void rotateByKposition_approach3(int[] arr, int k) {
+        if (arr.length <= 0) {
+            System.out.println("Empty Array ...");
+            return;
+        }
+        if (k > arr.length) {
+            k = k % arr.length;
+        }
+        rotateArr(arr, 0, arr.length - 1);
+        rotateArr(arr, 0, k - 1);
+        rotateArr(arr, k, arr.length - 1);
+    }
+
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,5,6,7};
+        int[] arr = {1, 2, 3, 4, 5, 6, 7};
+//        System.out.println("Before : " + Arrays.toString(arr));
+//        rotateByOne(arr);
+//        System.out.println("After : " + Arrays.toString(arr));
+//
+//
+//        System.out.println("Before : " + Arrays.toString(arr));
+//        rotateByKposition_approach1(arr, 10);
+//        System.out.println("After : " + Arrays.toString(arr));
+//
+//
+//        System.out.println("Before : " + Arrays.toString(arr));
+//        rotateByKposition_approach2(arr, 10);
+//        System.out.println("After : " + Arrays.toString(arr));
+
         System.out.println("Before : " + Arrays.toString(arr));
-        rotateByOne(arr);
+        rotateByKposition_approach3(arr, 10);
         System.out.println("After : " + Arrays.toString(arr));
-
-
-        System.out.println("Before : " + Arrays.toString(arr));
-        rotateByKposition_approach1(arr, 10);
-        System.out.println("After : " + Arrays.toString(arr));
-
-
-        System.out.println("Before : " + Arrays.toString(arr));
-        rotateByKposition_approach2(arr, 10);
-        System.out.println("After : " + Arrays.toString(arr));
-
     }
 }
