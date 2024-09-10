@@ -2,7 +2,7 @@ package JSpider.Array.Day6.IMP_Concept;
 
 import java.util.Arrays;
 
-//For the given array which contains elements from 0 up to 100 . Print the frequency of each elements
+//For the given array which contains elements from 0 up to 100 . Print the frequency of each element.
 public class Q1_ArrayImp {
     public static void main(String[] args) {
         int[] arr = {2, 2, 2, 2, 1, 23, 32, 32, 88, 65, 44, 33, 23, 46, 6, 78, 67};
