@@ -11,7 +11,6 @@ There are :
 
 Binary Representation : ( of Positive Number)
 
-
 Bitwise OR ( | ):
 Bitwise OR takes two binary bits and if at least one binary bit is 1 then it becomes 1 otherwise it will be 0.
 
@@ -20,15 +19,6 @@ Bitwise AND takes two binary bits and if both binary bits are 1 then it will be 
 
 Bitwise XOR ( ^ ):
 Bitwise XOR takes two binary bits if both are same then it will be 0 otherwise it will be 1.
-
-
-Day -2
-......
-.....
-
-
-
-Day - 3
 
 Bitwise Right Shift Operator ( >> )
 Bitwise Right Shift Operator is used to shift binary bits of a number into right side by the given value

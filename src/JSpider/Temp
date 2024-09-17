@@ -1,1 +1,9 @@
-WAP to insert a element at a certain position in Array
+WAJP that take a string input and print all the characters which has appeared only once in the string.
+WAJP that take string input and print all the characters which has appeared more than once in the string.
+
+contains (String str):
+This method checks whether a sequence of character is available in the string or not.
+eg.
+    s1="abcd";
+    sop(s1.contains("a"));// true
+    sop(s1.contains("e"));// false
